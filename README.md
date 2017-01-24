@@ -1,4 +1,3 @@
-# tract-level business establishment churning
-# An R shiny app for UCI's Metropolitan Futures Initiative 
-
-# Consists of ui.R, server.R, ZIP_centroids.csv, a shapefile, a css, and possibly additional data
+# ILSSC Crime Prediction
+# An R shiny app for UCI's Irvine Laboratory for the Study of Space and Crime
+# Kevin Kane, PhD
