@@ -20,6 +20,8 @@ shinyUI(fluidPage(
       p(strong("Data Notes:")),
       textOutput("var_desc"),
       br(),
+      textOutput("yr_desc"),
+      br(),
       a("Irvine Laboratory for the Study of Space and Crime", href="http://ilssc.soceco.uci.edu"),
       img(src="ilssc.png", height=200, width=200)
     ),
