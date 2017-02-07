@@ -32,8 +32,8 @@ shinyServer(function(input, output) {
 
     output$var_desc <- renderText({
       data_link = switch(input$variable,
-                       "Property Crime" = "shows a predicted rate for nonviolent crimes including burglary, motor vehicle theft, and larceny.",
-                       "Violent Crime"= "shows a predicted rate for crimes including aggravated assault, robbery, and homicide. ")
+                       "Property Crime" = "is the number of nonviolent crimes including burglary, motor vehicle theft, and larceny per 100,000 population.",
+                       "Violent Crime"= "is the number of violent crimes including aggravated assault, robbery, and homicide per 100,000 population. ")
       paste(input$variable, data_link)
     })
     
