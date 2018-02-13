@@ -1,6 +1,6 @@
 library(shiny)
 
-d <- read.csv("toweb_2015.csv")
+d <- read.csv("toweb_2018.csv")
 names <- as.character(unique(unlist(d$CITY)))
 
 shinyUI(fluidPage(
@@ -12,7 +12,7 @@ shinyUI(fluidPage(
                   choices=list("", "Violent Crime", "Property Crime"), selected=""),
       h5(strong("Choose Time Period:")),
       selectInput("year", label=NULL,
-                  choices=list("", "2017", "Change, 2015-2017"), selected=""),
+                  choices=list("", "2018", "Change, 2016-2018"), selected=""),
       h5(strong("Choose City:")),
       selectInput("city", label=NULL, choices = names[order(names)], selected="Irvine"),
       actionButton("go", label="Go/Refresh"),  # an input item that can be used with observeEvent
